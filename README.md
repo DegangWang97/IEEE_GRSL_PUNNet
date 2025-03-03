@@ -27,12 +27,12 @@ Put the data(.mat [data, map]) into ./data
 
 ### Training
 ```shell
-python main.py --command train --dataset HSI-II --epochs 1500 --learning_rate 1e-4 --factor 3 --gpu_ids 0
+python main.py --command train --dataset HSI-II --epochs 1500 --learning_rate 1e-4 --factor 2 --gpu_ids 0
 ```
 
 ### Testing
 ```shell
-python main.py --command predict --dataset HSI-II --epochs 1500 --learning_rate 1e-4 --factor 3 --gpu_ids 0
+python main.py --command predict --dataset HSI-II --epochs 1500 --learning_rate 1e-4 --factor 2 --gpu_ids 0
 ```
 
 - If you want to Train and Test your own data, you can change the input dataset name (dataset) and tune the parameters, such as Learning rate (learning_rate), PD stride factor (factor).
